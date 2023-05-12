@@ -21,7 +21,8 @@ def add_user(user_id, name, phone_number, latitude, longitude, gender):
 
 
 # ---Получение пользователя---
-def get_users():
+def \
+        _users():
     connection = sqlite3.connect('dostavka.db')
     sql = connection.cursor()
     users = sql.execute('SELECT name, id, gender FROM users;')

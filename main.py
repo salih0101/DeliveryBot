@@ -157,21 +157,21 @@ async def cart_function(message, state=Cart.waiting_for_product):
     #     await message.answer('Выберите разд')
 
     if user_answer == 'Оформить заказ✅':
-        # # ---Получить данные из корзины
-        # user_cart = database.get_user_cart(message.from_user.id)
-        # # ---Проверка есть ли вообще что-то в базе
-        # if user_cart:
-        #     # ---Формируем сообщения
-        #     result_answer = 'Ваш заказ✅🔽:\n\n'
-        #     admin_message = 'Новый заказ✅✅:\n\n'
-        #     total_price = 0
-        #
-        #     for i in user_cart:
-        #         result_answer += f'- {i[1]}: {i[-1]} шт = {i[3]:.2f}$\n\n'
-        #         admin_message += f'- {i[1]}: {i[-1]} шт = {i[3]:.2f}$\n'
-        #         total_price += i[3]
-        #
-        #     admin_message += f'Номер телефона: {i[2]}\n\nИтог: {total_price:.2f}'
+        # ---Получить данные из корзины
+        user_cart = database.get_user_cart(message.from_user.id)
+        # ---Проверка есть ли вообще что-то в базе
+        if user_cart:
+            # ---Формируем сообщения
+            result_answer = 'Ваш заказ✅🔽:\n\n'
+            admin_message = 'Новый заказ✅✅:\n\n'
+            total_price = 0
+
+            for i in user_cart:
+                result_answer += f'- {i[1]}: {i[-1]} шт = {i[3]:.2f}$\n\n'
+                admin_message += f'- {i[1]}: {i[-1]} шт = {i[3]:.2f}$\n'
+                total_price += i[3]
+
+            admin_message += f'Номер телефона: {i[2]}\n\nИтог: {total_price:.2f}'
         await message.answer('Раздел оформления заказа🔽', reply_markup=btns.confirmation_kb())
 
     elif user_answer == 'Отменить':
