@@ -2,7 +2,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardBut
 import database
 
 
-# --- Кнопка для отправки номера телефона ---
+
 def phone_number_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     button = KeyboardButton('Отправить номер телефона', request_contact=True)
@@ -11,7 +11,7 @@ def phone_number_kb():
     return kb
 
 
-# --- Кнопка для отправки локации ---
+
 def location_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     button = KeyboardButton('Отправить локацию', request_location=True)
@@ -19,7 +19,7 @@ def location_kb():
 
     return kb
 
-# --- Кнопка для выбора пола---
+
 def gender_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     button = KeyboardButton('Мужчина👨')
@@ -28,7 +28,7 @@ def gender_kb():
 
     return kb
 
-# --- Кнопки для выбора количество товаров
+
 def product_count():
     kb = ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
     buttons = [KeyboardButton(i) for i in range(1, 5)]
@@ -38,7 +38,7 @@ def product_count():
 
     return kb
 
-# ---Кнопки с названием товаров---
+
 def main_menu():
     kb = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
     button = KeyboardButton('Каталог📦')
@@ -51,7 +51,7 @@ def main_menu():
 
     return kb
 
-#---Кнопки для категории товаров---
+
 def catalog_folder():
     kb = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
     spray = KeyboardButton('КАПЛИ / СПРЕИ')
@@ -65,14 +65,14 @@ def catalog_folder():
 
     return kb
 
-#Кнопки для подкатегории товаров
+
 def spray_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     button = KeyboardButton('Назад◀️')
     all_products = database.spray_product()
     #print(all_products)
 
-    #Генерируем список кнопок с названием продуктов
+
     buttons = [KeyboardButton(i[0]) for i in all_products]
     kb.add(*buttons, button)
 
@@ -84,7 +84,7 @@ def tablets_kb():
     all_products = database.tablets_product()
     #print(all_products)
 
-    #Генерируем список кнопок с названием продуктов
+
     buttons = [KeyboardButton(i[0]) for i in all_products]
     kb.add(*buttons, button)
 
@@ -96,7 +96,7 @@ def syrup_kb():
     all_products = database.syrup_product()
     #print(all_products)
 
-    #Генерируем список кнопок с названием продуктов
+
     buttons = [KeyboardButton(i[0]) for i in all_products]
     kb.add(*buttons, button)
 
@@ -108,7 +108,7 @@ def pastes_kb():
     all_products = database.pastes_product()
     #print(all_products)
 
-    #Генерируем список кнопок с названием продуктов
+
     buttons = [KeyboardButton(i[0]) for i in all_products]
     kb.add(*buttons, button)
 
@@ -118,23 +118,23 @@ def other_pr_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     button = KeyboardButton('Назад◀️')
     all_products = database.other_product()
-    #print(all_products)
 
-    #Генерируем список кнопок с названием продуктов
+
+
     buttons = [KeyboardButton(i[0]) for i in all_products]
     kb.add(*buttons, button)
 
     return kb
 
 
-#Кнопка для выбора количество
+
 def count_kb(category_id):
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     button = KeyboardButton('Назад◀️')
     all_products = database.get_name_product(category_id)
-    #print(all_products)
 
-    #Генерируем список кнопок с названием продуктов
+
+
     buttons = [KeyboardButton(i[0]) for i in all_products]
     kb.add(*buttons, button)
 
@@ -145,23 +145,22 @@ def cart_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
     button = KeyboardButton('Очистить🆑')
     button1 = KeyboardButton('Оформить заказ✅')
-    # button2 = KeyboardButton('Редактировать🖊')
+
     back = KeyboardButton('Назад◀️')
     kb.add(button1, button, back)
 
     return kb
 
-# ---Кнопки для подтверждения заказа
+
 def confirmation_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
     button = KeyboardButton('Подтвердить')
-    button1 = KeyboardButton('Отменить')
     back = KeyboardButton('Назад◀️')
-    kb.add(button, button1, back)
+    kb.add(button, back)
 
     return kb
 
-# ---Кнопки для оформления заказа ---
+
 def order_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     # button = KeyboardButton('Наличные')
@@ -181,7 +180,7 @@ def user_screen():
 
 
 
-#----Кнопка добавления товара для администратора----
+
 def admin_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     btn_add = KeyboardButton('Добавить товар')
