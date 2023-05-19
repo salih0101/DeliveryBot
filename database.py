@@ -123,7 +123,17 @@ def add_pr_to_cart(user_id, product_name, price_pr, product_count):
 
     connection.commit()
 
+def add_pr_to_cart2(user_id, product_name, price_pr, product_count):
+    connection = sqlite3.connect('dostavka.db')
+    sql = connection.cursor()
 
+    phone_number = sql.execute('select phone_number from users where id=?;', (user_id,))
+    user_number = phone_number.fetchone()[0]
+
+    sql.execute('INSERT INTO cart2 VALUES (?,?,?,?,?);', (user_id, product_name, user_number, price_pr*product_count, product_count))
+
+
+    connection.commit()
 
 def get_user_cart(user_id):
     connection = sqlite3.connect('dostavka.db')
@@ -143,3 +153,4 @@ def delete_from_cart(user_id):
     connection.commit()
 
 
+# sql.execute('CREATE TABLE cart2 (user_id INTEGER, product_name TEXT, user_number TEXT, product_price INTEGER, product_count INTEGER);')

@@ -117,6 +117,7 @@ async def text_message3(message, state=GetProduct.getting_pr_count):
 
     if product_count.isnumeric():
         database.add_pr_to_cart(message.from_user.id, user_product, pr_price, int(product_count))
+        database.add_pr_to_cart2(message.from_user.id, user_product, pr_price, int(product_count))
 
         await message.answer('Товар добавлен в корзину✅\n\nВыберите продукт🔽', reply_markup=btns.catalog_folder())
         await state.finish()
