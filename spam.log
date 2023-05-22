@@ -1,0 +1,62 @@
+INFO:aiogram:Bot: ActiveBee\U0001f41d [@activebee_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:Каталог\U0001f4e6
+INFO:root:КАПЛИ / СПРЕИ
+INFO:root:Назад\U0001f519
+INFO:root:Корзина\U0001f5d1
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: ActiveBee\U0001f41d [@activebee_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:О нас
+INFO:root:Каталог\U0001f4e6
+INFO:root:КАПЛИ / СПРЕИ
+INFO:root:Назад\U0001f519
+INFO:root:Корзина\U0001f5d1
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: ActiveBee\U0001f41d [@activebee_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:Каталог\U0001f4e6
+INFO:root:КАПЛИ / СПРЕИ
+INFO:root:ПАСТЫ
+INFO:root:Назад\U0001f519
+INFO:root:Корзина\U0001f5d1
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: ActiveBee\U0001f41d [@activebee_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:Корзина\U0001f5d1
+INFO:root:Каталог\U0001f4e6
+INFO:root:КАПЛИ / СПРЕИ
+INFO:root:КАПЛИ / СПРЕИ
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: ActiveBee\U0001f41d [@activebee_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:КАПЛИ / СПРЕИ
+INFO:root:Корзина\U0001f5d1
+INFO:root:Корзина\U0001f5d1
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: ActiveBee\U0001f41d [@activebee_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:<bound method Message.answer of <Message {"message_id": 7677, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626263, "text": "Назад\u25c0\ufe0f"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7679, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626280, "text": "Назад\U0001f519"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7681, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626282, "text": "Корзина\U0001f5d1"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7686, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626287, "text": "Список заказов\U0001f4c4"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7690, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626290, "text": "Корзина\U0001f5d1"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7695, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626298, "text": "Каталог\U0001f4e6"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7697, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626337, "text": "Назад\U0001f519"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7699, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626339, "text": "Корзина\U0001f5d1"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7704, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626342, "text": "Контакты\u260e\ufe0f"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7706, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626357, "text": "Каталог\U0001f4e6"}>>
+INFO:root:<bound method Message.answer of <Message {"message_id": 7708, "from": {"id": 1186132006, "is_bot": false, "first_name": "S", "last_name": "M", "username": "ms2992", "language_code": "ru"}, "chat": {"id": 1186132006, "first_name": "S", "last_name": "M", "username": "ms2992", "type": "private"}, "date": 1684626509, "text": "Корзина\U0001f5d1"}>>
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!

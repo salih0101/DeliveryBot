@@ -6,10 +6,16 @@ import database
 import states
 import os
 from dotenv import load_dotenv, find_dotenv
+import logging
+
+from datetime import datetime
 
 load_dotenv(find_dotenv())
 
 bot = Bot(os.getenv('TOKEN'))
+
+logging.basicConfig(filename='spam.log', level=logging.INFO)
+
 
 dp = Dispatcher(bot, storage=MemoryStorage())
 
@@ -166,13 +172,13 @@ async def cart_function(message, state=Cart.waiting_for_product):
         await message.answer('Раздел оформления заказа🔽', reply_markup=btns.confirmation_kb())
 
     elif user_answer == 'Подтвердить':
-
+        order_id = datetime.now().microsecond
         user_cart = database.get_user_cart(message.from_user.id)
 
         if user_cart:
 
-            result_answer = 'Ваш заказ✅🔽:\n\n'
-            admin_message = 'Новый заказ✅✅:\n\n'
+            result_answer = f'Ваш заказ №{order_id} :\n\n'
+            admin_message = f'Новый заказ {order_id} ✅✅:\n\n'
             total_price = 0
 
             for i in user_cart:
@@ -251,8 +257,10 @@ async def main_menu(message):
         await message.answer('Выберите продукт🔽', reply_markup=btns.other_pr_kb())
         await states.GetProduct.getting_pr_name.set()
 
+    elif user_answer == 'Корзина🗑':
+        await message.answer('Выберите кнопку')
 
-    if user_answer == 'Назад◀️':
+    elif user_answer == 'Назад◀️':
         await message.answer('Выберите категорию🔽', reply_markup=btns.catalog_folder())
 
     elif user_answer == 'О нас':
@@ -288,7 +296,7 @@ async def main_menu(message):
             await message.answer('Ваша корзина пустая🗑\n\n'
                                  'Для выбора продукта нажмите кнопку ❗️Каталог❗️')
 
-
+    logging.info(message.text)
 @dp.message_handler(state=Order.waiting_accept)
 async def accept_order(message):
     user_answer = message.text

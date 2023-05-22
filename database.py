@@ -154,3 +154,4 @@ def delete_from_cart(user_id):
 
 
 # sql.execute('CREATE TABLE cart2 (user_id INTEGER, product_name TEXT, user_number TEXT, product_price INTEGER, product_count INTEGER);')
+# sql.execute('CREATE TABLE products (name INTEGER, id INTEGER, price INTEGER, description TEXT, picture TEXT, notes TEXT);')

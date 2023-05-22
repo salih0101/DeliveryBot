@@ -59,9 +59,10 @@ def catalog_folder():
     syrup = KeyboardButton('СИРОПЫ')
     pastes = KeyboardButton('ПАСТЫ')
     other = KeyboardButton('ОСТАЛЬНОЕ')
+    cart = KeyboardButton('Корзина🗑')
     back = KeyboardButton('Назад🔙')
 
-    kb.add(spray, tablets, syrup, pastes, other, back)
+    kb.add(spray, tablets, syrup, pastes, other, cart, back)
 
     return kb
 
